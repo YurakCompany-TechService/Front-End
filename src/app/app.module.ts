@@ -19,6 +19,10 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatInputModule} from "@angular/material/input";
 import {CasesService} from "./public/cases/services/cases.service";
 import {MatSortModule} from "@angular/material/sort";
+import {TechniciansComponent} from "./technicians/pages/technicians/technicians.component";
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,6 +30,7 @@ import {MatSortModule} from "@angular/material/sort";
     HomeComponent,
     HelpComponent,
     CasesComponent,
+    TechniciansComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,10 @@ import {MatSortModule} from "@angular/material/sort";
     MatPaginatorModule,
     MatInputModule,
     MatSortModule,
+    MatPaginatorModule,
+    MatCardModule,
+    MatGridListModule,
+    FormsModule,
   ],
   providers: [CasesService],
   bootstrap: [AppComponent]

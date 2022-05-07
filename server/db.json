@@ -55,32 +55,50 @@
     {
       "id": 1,
       "name": "AAAA Company",
-      "address": "Nowhere"
+      "address": "Nowhere",
+      "date": "01/05/2021",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "In Progress"
     },
     {
       "id": 2,
       "name": "BBBB Company",
-      "address": "Nowhere"
+      "address": "Nowhere",
+      "date": "23/11/2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "Complete"
     },
     {
       "id": 3,
       "name": "CCCC Company",
-      "address": "One Place"
+      "address": "One Place",
+      "date": "16/11/2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "Complete"
     },
     {
       "id": 4,
       "name": "DDDD Company",
-      "address": "The Next Place"
+      "address": "The Next Place",
+      "date": "05/11/2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "Complete"
     },
     {
       "id": 5,
       "name": "EEEE Company",
-      "address": "The Final Place"
+      "address": "The Final Place",
+      "date": "20/10/2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "Complete"
     },
     {
       "id": 6,
       "name": "FFFF Company",
-      "address": "The Last Frontier"
+      "address": "The Last Frontier",
+      "date": "29/09/2020",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
+      "status": "Complete"
     }
   ]
 }

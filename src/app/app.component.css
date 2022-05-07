@@ -19,7 +19,7 @@ footer {
 .footer-content {
   background-color: black;
   color: white;
-  margin: 0px;
+  margin: 0;
   padding: 30px;
 }
 h1{
@@ -41,6 +41,6 @@ p{
 }
 mat-icon{
   color: white;
-  padding: 0px 5px;
+  padding: 0 5px;
 }
 
