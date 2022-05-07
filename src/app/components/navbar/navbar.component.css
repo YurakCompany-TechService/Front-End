@@ -1,16 +1,13 @@
-<<<<<<< Updated upstream
-.mat-spacer {
-  flex: 1 1 auto;
-}
 *{
   list-style: none;
 }
-mat-toolbar
-{
-  height: 10%;
+.purple{
+  background-color: #593EA5;
+  color: white;
 }
-body {
-  height: 100%;
+mat-toolbar > span{
+  padding: 0px 100px 0px 40px;
+  font-size: 30px;
 }
 footer {
   width: 100%;
@@ -20,7 +17,7 @@ footer {
 .footer-content {
   background-color: black;
   color: white;
-  margin: 0px;
+  margin: 0;
   padding: 30px;
 }
 h1{
@@ -42,8 +39,6 @@ p{
 }
 mat-icon{
   color: white;
-  padding: 0px 5px;
+  padding: 0 5px;
 }
 
-=======
->>>>>>> Stashed changes
