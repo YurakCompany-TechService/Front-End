@@ -14,12 +14,18 @@ import {MatTableModule} from "@angular/material/table";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatTabsModule} from "@angular/material/tabs";
 import {CdkAccordionModule} from "@angular/cdk/accordion";
+import {CasesComponent} from "./public/cases/pages/cases.component";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
+import {CasesService} from "./public/cases/services/cases.service";
+import {MatSortModule} from "@angular/material/sort";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HelpComponent
+    HelpComponent,
+    CasesComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +39,11 @@ import {CdkAccordionModule} from "@angular/cdk/accordion";
     MatDividerModule,
     MatTabsModule,
     CdkAccordionModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatSortModule,
   ],
-  providers: [],
+  providers: [CasesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
