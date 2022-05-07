@@ -23,6 +23,7 @@ import {TechniciansComponent} from "./technicians/pages/technicians/technicians.
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {FormsModule} from "@angular/forms";
+import {ServiceshistoryComponent} from "./public/serviceshistory/serviceshistory.component";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {FormsModule} from "@angular/forms";
     HelpComponent,
     CasesComponent,
     TechniciansComponent,
+    ServiceshistoryComponent
   ],
   imports: [
     BrowserModule,
