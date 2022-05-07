@@ -4,15 +4,23 @@
 *{
   list-style: none;
 }
+mat-toolbar
+{
+  height: 10%;
+}
+body {
+  height: 100%;
+}
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
 .footer-content {
-  width: 1474px;
-  height: 60px;
   background-color: black;
   color: white;
   margin: 0px;
   padding: 30px;
-  position: absolute;
-  bottom: 0;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
