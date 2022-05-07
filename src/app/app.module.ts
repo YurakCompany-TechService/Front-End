@@ -44,12 +44,9 @@ import {MatSortModule} from "@angular/material/sort";
     ProfileBusinessComponent,
     HelpComponent,
     CasesComponent,
-<<<<<<< Updated upstream
-=======
     TechniciansComponent,
     ServiceshistoryComponent
 
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -75,6 +72,10 @@ import {MatSortModule} from "@angular/material/sort";
     MatPaginatorModule,
     MatInputModule,
     MatSortModule,
+    MatPaginatorModule,
+    MatCardModule,
+    MatGridListModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

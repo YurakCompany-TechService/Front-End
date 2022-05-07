@@ -9,14 +9,6 @@ import {ProfileBusinessComponent} from "./components/profile-business/profile-bu
 import {TechniciansComponent} from "./technicians/pages/technicians/technicians.component";
 import {HelpComponent} from "./public/help/help.component";
 import {CasesComponent} from "./public/cases/pages/cases.component";
-<<<<<<< Updated upstream
-
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'help', component: HelpComponent },
-  { path: 'cases', component: CasesComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-=======
 import {ServiceshistoryComponent} from "./public/serviceshistory/serviceshistory.component";
 
 const routes: Routes = [
@@ -32,7 +24,6 @@ const routes: Routes = [
   { path: 'cases', component: CasesComponent},
   { path: 'services-history', component: ServiceshistoryComponent },
 
->>>>>>> Stashed changes
 ];
 
 @NgModule({
