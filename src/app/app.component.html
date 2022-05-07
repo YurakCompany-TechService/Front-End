@@ -3,7 +3,7 @@
   <div class="mat-spacer"></div>
   <!--Application Options -->
   <a mat-button [routerLink]="'/home'">Home</a>
-
+  <a mat-button [routerLink]="'/help'">Help</a>
   <!--IN PROGRESS -->
   <!--<a mat-button [routerLink]="'/technicians'">Profile</a> -->
   <!--<a mat-button [routerLink]="'/notifications'">Notifications</a> -->
@@ -32,13 +32,14 @@
   </section>
   <mat-divider></mat-divider>
 </mat-toolbar>
-
+<body>
+  <router-outlet></router-outlet>
+</body>
 <!-- FOOTER (DONT MOVE!) -->
 <footer>
   <div class="footer-content">
     <h1>TechService</h1>
     <p>Copyright &copy; 2022 TechService</p>
-
     <ul class="social-links box">
       <li>
         <a><mat-icon>facebook</mat-icon></a>
@@ -55,4 +56,3 @@
     </ul>
   </div>
 </footer>
-<router-outlet></router-outlet>
