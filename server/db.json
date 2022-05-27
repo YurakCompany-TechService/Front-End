@@ -100,5 +100,62 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...",
       "status": "Complete"
     }
+  ],
+  "users": [
+    {
+      "email": "u202019108@upc.edu.pe",
+      "password": "$2a$10$QqfbOSljT8stksle1d4oreuxixkpgEDpa2hIWqnl8AjJ/6QMGrf/i",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "Samsung",
+      "area": "gafitero",
+      "id": 1
+    },
+    {
+      "email": "lrlitang18@gmail.com",
+      "password": "$2a$10$kuispAbWZn6meyQlUzUu1.CJxdDOHssYK2j83hZeE1/SC3Hh6.13O",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 2
+    },
+    {
+      "email": "miguel@gmail.com",
+      "password": "$2a$10$jGcJMuvK87BgNkkhvMYYMOqqbV2xJxmyqzshjKSi4qlUMtwf2l6gq",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 3
+    },
+    {
+      "email": "hola@gmail.com",
+      "password": "$2a$10$4xpYWpRZVj2IjPokJdFVKulN.dcrwDI/7zhsx7cuEUedd1YQRTAhW",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 4
+    },
+    {
+      "email": "jorge@gmail.com",
+      "password": "$2a$10$m5viQikiTwdc1Qk7VD7zT.dMmlxDrRGWvETAspWjIq3I9H46aPsZ2",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 5
+    }
   ]
 }

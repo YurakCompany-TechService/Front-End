@@ -1,12 +1,14 @@
 {
-  "name": "frontend-tech-service",
+  "name": "os",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "fake-api": "json-server --watch server/db.json --routes server/routes.json",
+    "fake-api-auth": "json-server-auth --watch server/db.json --routes server/routes.json"
   },
   "private": true,
   "dependencies": {
@@ -15,12 +17,14 @@
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
+    "@angular/fire": "^7.3.0",
     "@angular/forms": "~13.3.0",
     "@angular/material": "^13.3.6",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "lodash": "^4.17.21",
+    "json-server-auth": "^2.1.0",
+    "prettier": "^2.6.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
