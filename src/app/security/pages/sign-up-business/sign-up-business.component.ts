@@ -10,11 +10,11 @@ import {Router} from "@angular/router";
 })
 export class SignUpBusinessComponent implements OnInit {
   public hide: boolean = true;
-  signUpForm: FormGroup;
+  signUpFormB: FormGroup;
   constructor(private builder: FormBuilder,
               private authService: AuthService,
               private router: Router) {
-    this.signUpForm = this.builder.group({
+    this.signUpFormB = this.builder.group({
       name: ['', [Validators.required]],
       address: ['', [Validators.required]],
       subscription: ['', [Validators.required]],
@@ -25,26 +25,19 @@ export class SignUpBusinessComponent implements OnInit {
       creditCardCVV: ['', [Validators.required]]
     });
   }
-  get email() { return this.signUpForm.controls['email'];}
-  get password() { return this.signUpForm.controls['password'];}
-  get name() {return this.signUpForm.controls['name'];}
-  get address() {return this.signUpForm.controls['address'];}
-  get phone() {return this.signUpForm.controls['phone'];}
-  get creditCard() {return this.signUpForm.controls['creditCard'];}
-  get creditCardCVV() {return this.signUpForm.controls['creditCardCVV'];}
-  get subscription() {return this.signUpForm.controls['subscription'];}
+  get email() { return this.signUpFormB.controls['email'];}
+  get password() { return this.signUpFormB.controls['password'];}
+  get name() {return this.signUpFormB.controls['name'];}
+  get address() {return this.signUpFormB.controls['address'];}
+  get phone() {return this.signUpFormB.controls['phone'];}
+  get creditCard() {return this.signUpFormB.controls['creditCard'];}
+  get creditCardCVV() {return this.signUpFormB.controls['creditCardCVV'];}
+  get subscription() {return this.signUpFormB.controls['subscription'];}
 
   signUp(){
-    this.authService.signUpB(this.signUpForm.value).subscribe((response: any)=>{
-      this.authService.setName(JSON.stringify(response.user));
-      this.authService.setAddress(JSON.stringify(response.user));
-      this.authService.setEmail(JSON.stringify(response.user));
-      this.authService.setCreditCard(JSON.stringify(response.user));
-      this.authService.setCreditCardCVV(JSON.stringify(response.user));
-      this.authService.setPhone(JSON.stringify(response.user));
-      this.authService.setSubscription(JSON.stringify(response.user));
-      this.signUpForm.reset();
-      // go to sign in
+    this.authService.signUpB(this.signUpFormB.value).subscribe((response: any)=>{
+      this.authService.setCurrentUser(JSON.stringify(response.user));
+      this.signUpFormB.reset();
       this.router.navigate(['sign-in']).then();
     })
   }

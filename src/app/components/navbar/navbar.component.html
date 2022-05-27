@@ -8,6 +8,7 @@
   <a *ngIf="getCurrentUserEmail() === null" mat-button >
     <div (click)="hide = !hide" *ngIf="!hide"> Sign up</div>
   </a>
+<!--  Colocar dialogos para el registro-->
   <div>
     <a *ngIf="hide" mat-button [routerLink]="'/sign-up'" (click)="type='technician'">Sign up Technician</a>
     <a *ngIf="hide" mat-button [routerLink]="'/sign-up-business'" (click)="type='business'">Sign up Business</a>

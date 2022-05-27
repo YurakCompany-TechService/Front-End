@@ -15,82 +15,25 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
   public getFirstName(){
-    let fname = this.authService.getFirstName();
-    if (fname) {
-      console.log(`first name user: ${ fname}`);
-      let currentUser = JSON.parse(fname);
-      console.log(currentUser);
-      return currentUser.firstName;
-      console.log('eso')
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('firstName');
   }
   public getLastName(){
-    let lname = this.authService.getLastName();
-    if (lname) {
-      console.log(`last name user: ${ lname}`);
-      let currentUser = JSON.parse(lname);
-      console.log(currentUser);
-      return currentUser.lastName;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('lastName');
   }
   public getEmail(){
-    let email = this.authService.getEmail();
-    if (email) {
-      console.log(`email user: ${ email}`);
-      let currentUser = JSON.parse(email);
-      console.log(currentUser);
-      return currentUser.email;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('email');
   }
   public getBrand(){
-    let brand = this.authService.getBrand();
-    if (brand) {
-      console.log(`brand user: ${ brand}`);
-      let currentUser = JSON.parse(brand);
-      console.log(currentUser);
-      return currentUser.brand;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('brand');
   }
   public getArea(){
-    let area = this.authService.getArea();
-    if (area) {
-      console.log(`area user: ${ area}`);
-      let currentUser = JSON.parse(area);
-      console.log(currentUser);
-      return currentUser.area;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('area');
   }
   public getGender(){
-    let gender = this.authService.getGender();
-    if (gender) {
-      console.log(`gender user: ${ gender}`);
-      let currentUser = JSON.parse(gender);
-      console.log(currentUser);
-      return currentUser.gender;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('gender');
   }
   public getPhone(){
-    let phone = this.authService.getPhone();
-    if (phone) {
-      console.log(`phone user: ${ phone}`);
-      let currentUser = JSON.parse(phone);
-      console.log(currentUser);
-      return currentUser.phone;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('phone');
   }
   public showCompleteName(){
     return `${this.getFirstName()}  ${this.getLastName()}`;

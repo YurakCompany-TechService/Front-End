@@ -103,157 +103,59 @@
   ],
   "users": [
     {
-      "email": "lrlitang18@gmail.com",
-      "password": "$2a$10$pzCVAjzmAs/UGNqaa4wlJeKwsA9pl2MYqYJsS7I4JWCNk/.DzX00W",
-      "id": 1
-    },
-    {
-      "email": "sebitas@gmail.com",
-      "password": "$2a$10$8.6HjtbwOJuKa8sh7LwIEuxkea7WeSNkws2gicKkUbGdV9kSHL7/u",
-      "name": "Luis",
-      "id": 2
-    },
-    {
-      "email": "pokemon@gmail.com",
-      "password": "$2a$10$to14D1cZtHqSI8cV9WawSO4rUy97qWIJ9BSiaASxyGcbxfSmqjagK",
+      "email": "u202019108@upc.edu.pe",
+      "password": "$2a$10$QqfbOSljT8stksle1d4oreuxixkpgEDpa2hIWqnl8AjJ/6QMGrf/i",
+      "gender": "male",
       "firstName": "Luis",
-      "lastName": "Li",
-      "phone": 966484081,
-      "brand": "xiaomi",
-      "area": "electricista",
-      "id": 3
-    },
-    {
-      "email": "17.dotrero.17@gmail.com",
-      "password": "$2a$10$FSOnvp0dngu0LNETUB4FH.Dbh/gGtTZeE8DkCxNxY1H.PZBXGuuWS",
-      "gender": "one",
-      "firstName": "Diego",
       "lastName": "Li",
       "phone": 966484081,
       "brand": "Samsung",
-      "area": "Fontanero xd",
-      "id": 4
+      "area": "gafitero",
+      "id": 1
+    },
+    {
+      "email": "lrlitang18@gmail.com",
+      "password": "$2a$10$kuispAbWZn6meyQlUzUu1.CJxdDOHssYK2j83hZeE1/SC3Hh6.13O",
+      "gender": "male",
+      "firstName": "Luis",
+      "lastName": "Li",
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 2
     },
     {
       "email": "miguel@gmail.com",
-      "password": "$2a$10$1nEqHyQE9Pkx.LT9GOIZOuJVtLIlTBsW1mK.R6BEp/ur4rkYr8GLa",
-      "gender": "two",
-      "firstName": "Miguel",
+      "password": "$2a$10$jGcJMuvK87BgNkkhvMYYMOqqbV2xJxmyqzshjKSi4qlUMtwf2l6gq",
+      "gender": "male",
+      "firstName": "Luis",
       "lastName": "Li",
-      "phone": 999584068,
-      "brand": "xiaomi",
-      "area": "fontanero",
-      "id": 5
-    },
-    {
-      "email": "sebas@gmail.com",
-      "password": "$2a$10$8HCHBWWnHNmO5nXxA8K83evMa5FSzNfVC5CrUwasyx6MBWgrarUlC",
-      "gender": "two",
-      "firstName": "Sebas",
-      "lastName": "Sebitas",
-      "phone": 999584068,
-      "brand": "Logitech",
-      "area": "fontanero",
-      "id": 6
+      "phone": 966484081,
+      "brand": "123",
+      "area": "123",
+      "id": 3
     },
     {
       "email": "hola@gmail.com",
-      "password": "$2a$10$LIS5rIH1gYCLUkxJQ6GiLeuux9bVMdvmcZ6nFyfQrLdPgCNuP5ILO",
-      "gender": "one",
+      "password": "$2a$10$4xpYWpRZVj2IjPokJdFVKulN.dcrwDI/7zhsx7cuEUedd1YQRTAhW",
+      "gender": "male",
       "firstName": "Luis",
       "lastName": "Li",
       "phone": 966484081,
-      "brand": "as",
-      "area": "de",
-      "id": 7
-    },
-    {
-      "email": "ana@gmail.com",
-      "password": "$2a$10$2QemsZhuweoL9cPc/FgT6eoF1v6RsohVEn4.KOW0wi7VlVYJ82inO",
-      "gender": "two",
-      "firstName": "Ana",
-      "lastName": "fqw",
-      "phone": 992059876,
-      "brand": "qwfqwefqw",
-      "area": "wefgwe",
-      "id": 8
+      "brand": "123",
+      "area": "123",
+      "id": 4
     },
     {
       "email": "jorge@gmail.com",
-      "password": "$2a$10$5VPhCH3dIfhJMVI.0iYgeuFnRUR7h0ZkdjqeNI3ymxSOSvPjGbsH.",
-      "gender": "one",
+      "password": "$2a$10$m5viQikiTwdc1Qk7VD7zT.dMmlxDrRGWvETAspWjIq3I9H46aPsZ2",
+      "gender": "male",
       "firstName": "Luis",
       "lastName": "Li",
       "phone": 966484081,
-      "brand": "wefwefwe",
-      "area": "dwedfwf",
-      "id": 9
-    },
-    {
-      "email": "damian@gmail.com",
-      "password": "$2a$10$vSl3o4k7qWeO5MpEWU5T2uHaW95R4fnIqHjtL5tXhlFWK/aQSmtci",
-      "gender": "two",
-      "firstName": "Damian",
-      "lastName": "de",
-      "phone": 0,
-      "brand": "dweqfdwef",
-      "area": "wefwef",
-      "id": 10
-    },
-    {
-      "email": "porta@gmail.com",
-      "password": "$2a$10$MfylyjpYJH93VbE36kWhkuMOVUNAiSRqjvw/Nx2mcDYnNbXThW6cG",
-      "gender": "one",
-      "firstName": "Diego",
-      "lastName": "Porta",
-      "phone": 0,
-      "brand": "freferf",
-      "area": "ferfververv",
-      "id": 11
-    },
-    {
-      "email": "luis@gmail.com",
-      "password": "$2a$10$/j2wX8LatiRAeKcidug4we585bFbRwPVsC4fUa5vwfYuPaPepEdA.",
-      "gender": "one",
-      "firstName": "Luis",
-      "lastName": "Li",
-      "phone": 992059876,
-      "brand": "dedwe",
-      "area": "adfsdfasdfs",
-      "id": 12
-    },
-    {
-      "email": "work@gmail.com",
-      "password": "$2a$10$8JS7bwyo5ZrOCcD7U5d52OWIwVqqG.1r2OABvA05SNby6CsYWyg3C",
-      "name": "Rayito",
-      "address": "",
-      "subscription": "",
-      "phone": 966484081,
-      "creditCard": "1234",
-      "creditCardCVV": "12",
-      "id": 13
-    },
-    {
-      "email": "ult@gmail.com",
-      "password": "$2a$10$qezVJq92sUOBlzgRPMREVuc6nTGAbpSVXySpBFXfHIDsYM8gNYipm",
-      "gender": "female",
-      "firstName": "Luis",
-      "lastName": "Li",
-      "phone": 966484081,
-      "brand": "fefewrf",
-      "area": "fwefwewef",
-      "id": 14
-    },
-    {
-      "email": "company@gmail.com",
-      "password": "$2a$10$feVnDtvldBbEZuCa437TPej/9wOpCnpST6b7bRLyTaRj8QwNoaoH6",
-      "name": "company",
-      "address": "",
-      "subscription": "",
-      "phone": 999584068,
-      "creditCard": "13123",
-      "creditCardCVV": "12321312",
-      "id": 15
+      "brand": "123",
+      "area": "123",
+      "id": 5
     }
   ]
 }

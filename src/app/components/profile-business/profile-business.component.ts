@@ -15,37 +15,12 @@ export class ProfileBusinessComponent implements OnInit {
   ngOnInit(): void {
   }
   public getName(){
-    let name = this.authService.getName();
-    if (name) {
-      console.log(`name user: ${ name}`);
-      let currentUser = JSON.parse(name);
-      console.log(currentUser);
-      return currentUser.name;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('name');
   }
   public getSubscription(){
-    let subscription = this.authService.getSubscription();
-    if (subscription) {
-      console.log(`subscription user: ${ subscription}`);
-      let currentUser = JSON.parse(subscription);
-      console.log(currentUser);
-      return currentUser.subscription;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('subscription');
   }
   public getEmail(){
-    let email = this.authService.getEmail();
-    if (email) {
-      console.log(`email user: ${ email}`);
-      let currentUser = JSON.parse(email);
-      console.log(currentUser);
-      return currentUser.email;
-    } else {
-      return null;
-    }
+    this.authService.getValidatedData('email');
   }
-
 }

@@ -17,17 +17,11 @@ export class NavbarComponent implements OnInit {
               private authService: AuthService) {
   }
   public getCurrentUserEmail(){
-    let currentUserString = this.authService.getCurrentUser();
-      if (currentUserString) {
-        console.log(`current user: ${ currentUserString}`);
-        let currentUser = JSON.parse(currentUserString);
-        console.log(currentUser);
-        return currentUser.email;
-      } else {
-        return null;
-      }
-  }
+    console.log(this.type);
+    console.log(this.hide);
+    return this.authService.getValidatedData('email');
 
+  }
   signOut() {
     this.authService.signOut();
     this.router.navigate(['home']).then();

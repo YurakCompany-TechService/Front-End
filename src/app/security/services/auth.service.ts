@@ -67,86 +67,18 @@ export class AuthService {
     localStorage.removeItem('accessToken');
     localStorage.removeItem('currentUser');
   }
-  //get and set of technician
-  setFirstName(fname: string){
-    console.log(fname);
-    localStorage.setItem('firstName', fname);
+  public getValidatedData(_value: string){
+    let currentUserString = this.getCurrentUser();
+    if (currentUserString) {
+      console.log(currentUserString);
+      let currentUser = JSON.parse(currentUserString);
+      console.log(currentUser[_value]);
+      return currentUser[_value];
+    } else {
+      return null;
+    }
   }
-  getFirstName(){
-    return localStorage.getItem('firstName');
-  }
-  setLastName(lname: string){
-    localStorage.setItem('lastName', lname);
-  }
-  getLastName(){
-    return localStorage.getItem('lastName');
-  }
-  setGender(gender: string){
-    localStorage.setItem('gender', gender);
-  }
-  getGender(){
-    return localStorage.getItem('gender');
-  }
-  setPhone(phone: string){
-    localStorage.setItem('phone', phone);
-  }
-  getPhone(){
-    return localStorage.getItem('phone');
-  }
-  setBrand(brand: string){
-    localStorage.setItem('brand', brand);
-  }
-  getBrand(){
-    return localStorage.getItem('brand');
-  }
-  setArea(area: string){
-    localStorage.setItem('area', area);
-  }
-  getArea(){
-    return localStorage.getItem('area');
-  }
-  setEmail(email: string){
-    localStorage.setItem('email', email);
-  }
-  getEmail(){
-    return localStorage.getItem('email');
-  }
-  setPassword(password: string){
-    localStorage.setItem('password', password);
-  }
-  getPassword(){
-    return localStorage.getItem('password');
-  }
-  setName(name: string){
-    localStorage.setItem('name', name);
-  }
-  getName(){
-    return localStorage.getItem('name');
-  }
-  setAddress(address: string){
-    localStorage.setItem('address', address);
-  }
-  getAddress(){
-    return localStorage.getItem('address');
-  }
-  setCreditCard(card: string){
-    localStorage.setItem('creditCard', card);
-  }
-  getCreditCard(){
-    return localStorage.getItem('creditCard');
-  }
-  setCreditCardCVV(card: string){
-    localStorage.setItem('creditCardCVV', card);
-  }
-  getCreditCardCVV(){
-    return localStorage.getItem('creditCardCVV');
-  }
-  setSubscription(subscription: string){
-    localStorage.setItem('subscription', subscription);
-  }
-  getSubscription(){
-    return localStorage.getItem('subscription');
-  }
+
 
 
 

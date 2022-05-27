@@ -36,15 +36,9 @@ export class SignUpComponent implements OnInit {
 
   signUp(){
     this.authService.signUp(this.signUpForm.value).subscribe((response: any)=>{
-      this.authService.setFirstName(JSON.stringify(response.user));
-      this.authService.setLastName(JSON.stringify(response.user));
-      this.authService.setEmail(JSON.stringify(response.user));
-      this.authService.setBrand(JSON.stringify(response.user));
-      this.authService.setArea(JSON.stringify(response.user));
-      this.authService.setPhone(JSON.stringify(response.user));
-      this.authService.setGender(JSON.stringify(response.user));
+      console.log(JSON.stringify(response.user));
+      this.authService.setCurrentUser(JSON.stringify(response.user));
       this.signUpForm.reset();
-      // go to sign in
       this.router.navigate(['sign-in']).then();
   })
   }
