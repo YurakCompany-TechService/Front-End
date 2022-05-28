@@ -31,6 +31,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import {MatSortModule} from "@angular/material/sort";
     MatCardModule,
     MatGridListModule,
     FormsModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
