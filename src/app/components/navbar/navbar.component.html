@@ -1,20 +1,18 @@
 <mat-toolbar class="purple">
   <span>TechService</span>
   <a mat-button [routerLink]="'/home'">Home</a>
-  <a mat-button [routerLink]="'/technicians'">Profile</a>
+  <a mat-button *ngIf="getCurrentTargetSegment()==='technician'" [routerLink]="'/technicians'">Profile</a>
   <a mat-button [routerLink]="'/cases'">Cases</a>
   <a mat-button [routerLink]="'/help'">Help</a>
-  <a *ngIf="getCurrentUserEmail() === null" (click)="hide = false" mat-button [routerLink]="'/sign-in'">Sign in</a>
-  <a *ngIf="getCurrentUserEmail() === null" mat-button >
-    <div (click)="hide = !hide" *ngIf="!hide"> Sign up</div>
+  <a *ngIf="!isSignedIn()" mat-button [routerLink]="'/sign-in'">Sign in</a>
+  <a *ngIf="!isSignedIn()" (click)="openDialog()" mat-button>
+    <div> Sign up</div>
   </a>
-<!--  Colocar dialogos para el registro-->
-  <div>
-    <a *ngIf="hide" mat-button [routerLink]="'/sign-up'" (click)="type='technician'">Sign up Technician</a>
-    <a *ngIf="hide" mat-button [routerLink]="'/sign-up-business'" (click)="type='business'">Sign up Business</a>
-  </div>
-  <div *ngIf="getCurrentUserEmail()">
-    <a mat-button (click)="type==='technician'?goToProfile():type==='business'?goToProfileBusiness():''">{{getCurrentUserEmail() }}</a>
+  <div *ngIf="isSignedIn()">
+    <a mat-button (click)="getCurrentTargetSegment()==='technician'?goToProfile():getCurrentTargetSegment()==='business'?goToProfileBusiness():''">
+      <div *ngIf="getCurrentTargetSegment()==='technician'">{{getCurrentUserEmail()}}</div>
+      <div *ngIf="getCurrentTargetSegment()==='business'">{{getCurrentUserEmail()}}</div>
+    </a>
     <a mat-button (click)="signOut()">Sign-Out</a>
   </div>
 </mat-toolbar>

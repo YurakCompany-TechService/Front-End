@@ -3,6 +3,8 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from "../../services/auth.service";
 import {Router} from "@angular/router";
 import {NavbarComponent} from "../../../components/navbar/navbar.component";
+import { DialogComponent } from "../../../components/dialog/dialog.component";
+import { MatDialog } from "@angular/material/dialog";
 
 @Component({
   selector: 'app-sign-in',
@@ -34,6 +36,7 @@ export class SignInComponent implements OnInit {
       this.router.navigate(['home']).then();
     })
   }
+
   cancelSignIn() {
     console.log('Cancelled');
     this.router.navigate(['home']).then();

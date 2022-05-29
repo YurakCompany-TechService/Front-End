@@ -22,7 +22,8 @@ export class SignUpBusinessComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       phone: [0, [Validators.required, Validators.maxLength(9)]],
       creditCard: ['', [Validators.required]],
-      creditCardCVV: ['', [Validators.required]]
+      creditCardCVV: ['', [Validators.required]],
+      type: ['']
     });
   }
   get email() { return this.signUpFormB.controls['email'];}
@@ -33,12 +34,14 @@ export class SignUpBusinessComponent implements OnInit {
   get creditCard() {return this.signUpFormB.controls['creditCard'];}
   get creditCardCVV() {return this.signUpFormB.controls['creditCardCVV'];}
   get subscription() {return this.signUpFormB.controls['subscription'];}
+  get type() {return this.signUpFormB.controls['type'];}
 
   signUp(){
-    this.authService.signUpB(this.signUpFormB.value).subscribe((response: any)=>{
-      this.authService.setCurrentUser(JSON.stringify(response.user));
-      this.signUpFormB.reset();
-      this.router.navigate(['sign-in']).then();
+    this.signUpFormB.value.type = 'business';
+      this.authService.signUpB(this.signUpFormB.value).subscribe((response: any)=>{
+        this.authService.setCurrentUser(JSON.stringify(response.user));
+        this.signUpFormB.reset();
+        this.router.navigate(['sign-in']).then();
     })
   }
   cancelSignUp() {

@@ -59,7 +59,7 @@ export class AuthService {
     return localStorage.getItem('currentUser');
   }
   //is signed
-  get isSignedIn(): boolean{
+  public isSignedIn(): boolean{
     return this.getToken() !== null;
   }
   // sign-out

@@ -32,6 +32,8 @@ import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     HelpComponent,
     CasesComponent,
     TechniciansComponent,
-    ServiceshistoryComponent
+    ServiceshistoryComponent,
+    DialogComponent
 
   ],
   imports: [
@@ -78,6 +81,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatGridListModule,
     FormsModule,
     IvyCarouselModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

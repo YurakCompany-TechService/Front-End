@@ -30,11 +30,9 @@
   margin: 20px 0px;
 }
 #presentation mat-card button{
-  /*margin: 30px 0px 0px 50px;*/
   width: 50%;
   background-color: #593EA5;
   color: white;
-  padding: 5px;
 }
 #presentation mat-card div button{
   margin: 0px 25%;
