@@ -33,7 +33,8 @@ export class SignInComponent implements OnInit {
       this.signInForm.reset();
       console.log(`accessToken: ${this.authService.getToken()}`);
       // back to home
-      this.router.navigate(['home']).then();
+      let userTarget: string = this.authService.getValidatedData('type');
+      this.router.navigate([`home-${userTarget}`]).then();
     })
   }
 
