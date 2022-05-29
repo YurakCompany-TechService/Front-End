@@ -4,6 +4,7 @@ import {AuthService} from "../../security/services/auth.service";
 import {MatDialog} from "@angular/material/dialog";
 import { DialogComponent } from "../dialog/dialog.component";
 import { NavbarService } from "./service/navbar.service";
+import {NotificationComponent} from "../notification/notification.component";
 
 @Component({
   selector: 'app-navbar',
@@ -59,5 +60,10 @@ export class NavbarComponent implements OnInit {
   }
   isSignedIn(){
     return this.authService.isSignedIn();
+  }
+  openDialogNoty(){
+    const dialogRef = this.dialog.open(NotificationComponent, {
+      data: {name: 'test', animal: 'test'}
+    });
   }
 }

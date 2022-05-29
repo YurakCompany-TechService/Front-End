@@ -37,6 +37,11 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { HomeBusinessComponent } from './views/home/home/home-business/home-business.component';
 import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
 import { CompaniesComponent } from "./companies/pages/companies/companies.component";
+import {NotificationComponent} from "./components/notification/notification.component";
+import {SubscriptionComponent} from "./views/subscription/subscription.component";
+import {RequestComponent} from "./views/request/pages/request/request.component";
+import {DialogSubscriptionComponent} from "./components/dialogSubscription/dialogSubscription.component";
+import {CasesTableComponent} from "./public/cases/pages/table/cases.component";
 
 @NgModule({
   declarations: [
@@ -55,7 +60,13 @@ import { CompaniesComponent } from "./companies/pages/companies/companies.compon
     DialogComponent,
     HomeBusinessComponent,
     HomeTechnicianComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    NotificationComponent,
+    SubscriptionComponent,
+    RequestComponent,
+    DialogSubscriptionComponent,
+    CasesComponent,
+    CasesTableComponent
 
   ],
   imports: [

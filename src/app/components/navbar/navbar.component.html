@@ -7,8 +7,9 @@
       <a mat-button  [routerLink]="'/technicians'">Profile</a>
     </span>
     <span *ngIf="getCurrentTargetSegment()==='business'">
-      <a mat-button  [routerLink]="'/home-business'">Home</a>
-      <a mat-button  [routerLink]="'/profile-business'">Profile</a>
+      <a mat-button [routerLink]="'/home-business'">Home</a>
+      <a mat-button [routerLink]="'/profile-business'">Profile</a>
+      <a mat-button [routerLink]="'/subscription'">Subscription</a>
       <a mat-button [routerLink]="'/cases'">Cases</a>
     </span>
     <a mat-button (click)="signOut()">Sign-Out</a>
@@ -18,7 +19,15 @@
   <a *ngIf="!isSignedIn()" (click)="openDialog()" mat-button>
     <div> Sign up</div>
   </a>
-
+  <div *ngIf="isSignedIn()" mat-button class="rt-container" >
+    <div class="rt-content">
+      <mat-toolbar class="purple reverse-toolbar">
+        <a mat-button (click)="openDialogNoty()">
+          <img src="../../../assets/notify-icon.png" class="toolbar-icon" alt="">
+        </a>
+      </mat-toolbar>
+    </div>
+  </div>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <footer>
