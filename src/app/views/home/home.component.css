@@ -1,31 +1,45 @@
-.img{
+.img-business{
   background-image: url("../../../assets/business.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
 }
-mat-card{
-  width: 25%;
+.img-technician{
+  background-image: url("../../../assets/technician.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  margin: 0px;
+}
+#presentation mat-card{
+  width: 300px;
   position: relative;
   left: 100px;
   top: 150px;
   border-radius: 10px;
   height: 200px;
 }
-mat-card-title{
-  padding: 30px 0px;
-  font-size: 30px;
-}
-mat-card-subtitle{
-  text-align: center;
+#presentation mat-card-title{
+  padding:10px 0px;
   font-size: 20px;
 }
-button{
-  margin: 30px 0px 0px 150px;
+#presentation mat-card-subtitle{
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+#presentation mat-card button{
+  /*margin: 30px 0px 0px 50px;*/
+  width: 50%;
   background-color: #593EA5;
   color: white;
   padding: 5px;
 }
+#presentation mat-card div button{
+  margin: 0px 25%;
+}
+
 carousel{
   height: 500px;
 }
@@ -40,6 +54,7 @@ carousel{
 }
 #testimonials mat-card mat-card-subtitle{
   color: white;
+  text-align: center;
 }
 #testimonials mat-card-title{
   text-align: center;
@@ -49,6 +64,7 @@ carousel{
   height: 100px;
   margin: auto;
   border-radius: 20px;
+  padding: 30px 0px;
 }
 #testimonials h1{
   text-align: center;

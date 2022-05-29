@@ -1,15 +1,19 @@
-<div>
-  <div class="img">
+<section id="presentation">
+  <div [class]="img">
     <mat-card>
-      <mat-card-title>Business</mat-card-title>
-      <mat-card-subtitle>Request your technical service</mat-card-subtitle>
-      <button mat-button [routerLink]="'/sign-in'">Register to order</button>
+      <button mat-button (click)="img='img-business'"><mat-card-title>Business</mat-card-title></button>
+      <button mat-button (click)="img='img-technician'"><mat-card-title>Technician</mat-card-title></button>
+      <div *ngIf="img === 'img-business'">
+        <mat-card-subtitle >Request your technical service</mat-card-subtitle>
+        <button mat-button [routerLink]="'/sign-up-business'">Register to order</button>
+      </div>
+      <div *ngIf="img === 'img-technician'">
+        <mat-card-subtitle >Provide your technical service</mat-card-subtitle>
+        <button mat-button [routerLink]="'/sign-up'">Register to serve</button>
+      </div>
     </mat-card>
   </div>
-<!--    <carousel-->
-<!--      [images]="images">-->
-<!--    </carousel>-->
-  </div>
+</section>
 <section id="testimonials">
   <h1>Testimonials</h1>
     <carousel [cellsToShow]="3" [height]="500" [width]="1250"
