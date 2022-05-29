@@ -2,21 +2,21 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
 import { catchError, Observable, retry, throwError } from "rxjs";
 import { Case } from "../model/case";
+import {TechniciansService} from "../../../technicians/services/technicians.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CasesService {
   // Cases Endpoint
-  basePath = 'http://localhost:3000/case';
-
+  basePath = 'http://localhost:3000/cases';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
     })
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private techniciansService: TechniciansService ) { }
 
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -30,7 +30,7 @@ export class CasesService {
     return throwError(() => new Error('Something happened with request, please try again later.'));
   }
 
-  // Get all students
+  // Get all cases
   getAll(): Observable<Case> {
     return this.http.get<Case>(this.basePath, this.httpOptions)
       .pipe(
@@ -39,4 +39,7 @@ export class CasesService {
       );
   }
 
+  getTechnician(technicianId: any) {
+    return this.techniciansService.getById(technicianId);
+  }
 }
