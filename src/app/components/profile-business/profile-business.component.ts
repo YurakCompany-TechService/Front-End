@@ -14,13 +14,16 @@ export class ProfileBusinessComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public getName(){
-    this.authService.getValidatedData('name');
+  public getFirstName(){
+    return this.authService.getValidatedData('name')
   }
-  public getSubscription(){
-    this.authService.getValidatedData('subscription');
+  public getPhone(){
+    return this.authService.getValidatedData('phone');
   }
   public getEmail(){
-    this.authService.getValidatedData('email');
+    return this.authService.getValidatedData('email');
+  }
+  public getAddress(){
+    return this.authService.getValidatedData('address');
   }
 }

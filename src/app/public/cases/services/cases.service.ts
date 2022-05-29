@@ -8,7 +8,7 @@ import { Case } from "../model/case";
 })
 export class CasesService {
   // Cases Endpoint
-  basePath = 'http://localhost:3000/case';
+  basePath = 'http://localhost:3000/cases';
 
   httpOptions = {
     headers: new HttpHeaders({

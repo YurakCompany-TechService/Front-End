@@ -59,7 +59,7 @@ export class AuthService {
     return localStorage.getItem('currentUser');
   }
   //is signed
-  get isSignedIn(): boolean{
+  public isSignedIn(): boolean{
     return this.getToken() !== null;
   }
   // sign-out
@@ -70,9 +70,7 @@ export class AuthService {
   public getValidatedData(_value: string){
     let currentUserString = this.getCurrentUser();
     if (currentUserString) {
-      console.log(currentUserString);
       let currentUser = JSON.parse(currentUserString);
-      console.log(currentUser[_value]);
       return currentUser[_value];
     } else {
       return null;
