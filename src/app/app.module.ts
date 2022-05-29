@@ -34,6 +34,9 @@ import {MatSortModule} from "@angular/material/sort";
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { MatDialogModule } from "@angular/material/dialog";
+import { HomeBusinessComponent } from './views/home/home/home-business/home-business.component';
+import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
+import { CompaniesComponent } from "./companies/pages/companies/companies.component";
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { MatDialogModule } from "@angular/material/dialog";
     CasesComponent,
     TechniciansComponent,
     ServiceshistoryComponent,
-    DialogComponent
+    DialogComponent,
+    HomeBusinessComponent,
+    HomeTechnicianComponent,
+    CompaniesComponent
 
   ],
   imports: [

@@ -10,6 +10,8 @@ import {TechniciansComponent} from "./technicians/pages/technicians/technicians.
 import {HelpComponent} from "./public/help/help.component";
 import {CasesComponent} from "./public/cases/pages/cases.component";
 import {ServiceshistoryComponent} from "./public/serviceshistory/serviceshistory.component";
+import { HomeBusinessComponent } from './views/home/home/home-business/home-business.component';
+import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
 
 const routes: Routes = [
   {path: 'sign-in', component: SignInComponent},
@@ -23,6 +25,9 @@ const routes: Routes = [
   { path: 'help', component: HelpComponent },
   { path: 'cases', component: CasesComponent},
   { path: 'services-history', component: ServiceshistoryComponent },
+  { path: 'home-technician', component: HomeTechnicianComponent },
+  { path: 'home-business', component: HomeBusinessComponent }
+
 
 ];
 

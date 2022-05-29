@@ -27,19 +27,10 @@ export class NavbarComponent implements OnInit {
     return this.authService.getValidatedData('type')
   }
   public getCurrentUserEmail() {
-    console.log(this.service.type)
     return this.authService.getValidatedData('email');
   }
   public getCurrentFirstName() {
-    let currentUserString = this.authService.getCurrentUser();
-    if (currentUserString) {
-      console.log(currentUserString);
-      let currentUser = JSON.parse(currentUserString);
-      console.log(currentUser['firstName']);
-      return currentUser.firstName;
-    } else {
-      return null;
-    }
+    return this.authService.getValidatedData('firstName');
   }
   public getCurrentLastName() {
     return this.authService.getValidatedData('lastName');

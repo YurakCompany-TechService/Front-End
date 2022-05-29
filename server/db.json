@@ -118,7 +118,7 @@
       "email": "empresa@gmail.com",
       "password": "$2a$10$4R4/mpKZYqkAQAUAZIovSeHGfeiUYkq5OHhn8tQuQ/etdpbwAs/Gy",
       "name": "Devy",
-      "address": "",
+      "address": "San Borja",
       "subscription": "plus",
       "phone": 123,
       "creditCard": "qw4e",
@@ -126,5 +126,7 @@
       "type": "business",
       "id": 8
     }
+  ],
+  "cases": [
   ]
 }

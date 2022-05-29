@@ -70,9 +70,7 @@ export class AuthService {
   public getValidatedData(_value: string){
     let currentUserString = this.getCurrentUser();
     if (currentUserString) {
-      console.log(currentUserString);
       let currentUser = JSON.parse(currentUserString);
-      console.log(currentUser[_value]);
       return currentUser[_value];
     } else {
       return null;

@@ -14,30 +14,37 @@
 }
 #presentation mat-card{
   width: 300px;
+  height: 250px;
   position: relative;
   left: 100px;
   top: 150px;
   border-radius: 10px;
-  height: 200px;
+  margin: 0px;
+  padding: 0px;
 }
 #presentation mat-card-title{
+  text-align: center;
+  font-weight: bolder;
   padding:10px 0px;
   font-size: 20px;
 }
 #presentation mat-card-subtitle{
-  text-align: center;
-  font-size: 20px;
+  padding: 0px 10px;
+  font-size: 15px;
   margin: 20px 0px;
 }
-#presentation mat-card button{
+#presentation mat-card button, #presentation mat-card a{
   width: 50%;
-  background-color: #593EA5;
+  background-color: black;
   color: white;
+  border-radius: 0px;
+}
+#presentation mat-card a:active{
+  background-color: rgba(0, 0, 0, 0.84);
 }
 #presentation mat-card div button{
   margin: 0px 25%;
 }
-
 carousel{
   height: 500px;
 }

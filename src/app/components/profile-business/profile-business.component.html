@@ -1,18 +1,16 @@
-
-<mat-card>
-  <mat-card-title>{{getName()}}</mat-card-title>
-  <img mat-card-image src="../../../assets/avatar.jpg" alt="">
-  <mat-card-content >
-    <mat-grid-list cols="2" rowHeight="80px">
-      <mat-grid-tile>
-        <mat-card-subtitle>Email</mat-card-subtitle>
-        <div>{{getEmail()}}</div>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card-subtitle>Subscription</mat-card-subtitle>
-        <div>{{getSubscription()}}</div>
-      </mat-grid-tile>
-    </mat-grid-list>
-
-  </mat-card-content>
+<mat-card class="table-wrapper">
+  <mat-card class="for-title">
+    <h1 style="color: white">
+      My Profile
+    </h1>
+  </mat-card>
+  <mat-card class="for-info">
+    <mat-card-title>Bio:</mat-card-title>
+    <div>Contact email: {{getEmail()}}</div>
+    <div>Company Name: {{getFirstName()}}</div>
+    <div>Phone: {{getPhone()}}</div>
+    <div>Address: {{getAddress()}}</div>
+  </mat-card>
+  <button mat-raised-button [routerLink]="'/services-history'" style="left: 830px; ">VIEW SERVICES HISTORY</button>
+  <img class="img-profile" src="https://www.eltiempo.com/uploads/2020/06/26/5ef63558ca00e.jpeg">
 </mat-card>
