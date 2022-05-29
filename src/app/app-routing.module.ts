@@ -12,10 +12,14 @@ import {CasesComponent} from "./public/cases/pages/cases.component";
 import {ServiceshistoryComponent} from "./public/serviceshistory/serviceshistory.component";
 import { HomeBusinessComponent } from './views/home/home/home-business/home-business.component';
 import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
+import {SubscriptionComponent} from "./views/subscription/subscription.component";
+import {RequestComponent} from "./views/request/pages/request/request.component";
 
 const routes: Routes = [
   {path: 'sign-in', component: SignInComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'subscription', component: SubscriptionComponent},
+  {path: 'request-edit', component: RequestComponent},
   {path: '', redirectTo: ' home', pathMatch: 'full'},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'profile', component: ProfileComponent},
