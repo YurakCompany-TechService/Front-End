@@ -125,6 +125,18 @@
       "creditCardCVV": "1423",
       "type": "business",
       "id": 8
+    },
+    {
+      "email": "cokijlmf@gmail.com",
+      "password": "$2a$10$k3jU8MrKfGX0tClNHR2dCuxArSTcFhKQY.QLRSPFNq1z/WvC9PMOu",
+      "name": "Jorge",
+      "address": "",
+      "subscription": "normal",
+      "phone": 1,
+      "creditCard": "4555894722360123",
+      "creditCardCVV": "497",
+      "type": "business",
+      "id": 9
     }
   ],
   "cases": [
