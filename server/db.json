@@ -137,6 +137,18 @@
       "creditCardCVV": "497",
       "type": "business",
       "id": 9
+    },
+    {
+      "email": "cokijlmf@outlook.com",
+      "password": "$2a$10$Cqhk9TNNz.MU7ZwOOK/fS.8trJ1ClvteTpuItVZv/iMeNAfCbXwhW",
+      "gender": "male",
+      "firstName": "Antonio",
+      "lastName": "Lopez",
+      "phone": 2,
+      "brand": "",
+      "area": "Laptop",
+      "type": "technician",
+      "id": 10
     }
   ],
   "cases": [
