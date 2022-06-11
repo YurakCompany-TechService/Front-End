@@ -14,23 +14,27 @@ import { HomeBusinessComponent } from './views/home/home/home-business/home-busi
 import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
 import {SubscriptionComponent} from "./views/subscription/subscription.component";
 import {RequestComponent} from "./views/request/pages/request/request.component";
+import { ViewRequestComponent } from './views/request/view-request/view-request.component';
+import { WorkActiveComponent } from './views/work-active/work-active.component';
 
 const routes: Routes = [
-  {path: 'sign-in', component: SignInComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'subscription', component: SubscriptionComponent},
-  {path: 'request-edit', component: RequestComponent},
-  {path: '', redirectTo: ' home', pathMatch: 'full'},
-  {path: 'sign-up', component: SignUpComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'sign-up-business', component: SignUpBusinessComponent},
-  {path: 'profile-business', component: ProfileBusinessComponent},
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'subscription', component: SubscriptionComponent },
+  { path: 'request-edit', component: RequestComponent },
+  { path: '', redirectTo: ' home', pathMatch: 'full' },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'sign-up-business', component: SignUpBusinessComponent },
+  { path: 'profile-business', component: ProfileBusinessComponent },
   { path: 'technicians', component: TechniciansComponent },
   { path: 'help', component: HelpComponent },
   { path: 'cases', component: CasesComponent},
   { path: 'services-history', component: ServiceshistoryComponent },
   { path: 'home-technician', component: HomeTechnicianComponent },
-  { path: 'home-business', component: HomeBusinessComponent }
+  { path: 'home-business', component: HomeBusinessComponent },
+  { path: 'view-request', component: ViewRequestComponent },
+  { path: 'work-active', component: WorkActiveComponent }
 
 
 ];

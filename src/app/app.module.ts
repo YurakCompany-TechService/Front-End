@@ -42,6 +42,9 @@ import {SubscriptionComponent} from "./views/subscription/subscription.component
 import {RequestComponent} from "./views/request/pages/request/request.component";
 import {DialogSubscriptionComponent} from "./components/dialogSubscription/dialogSubscription.component";
 import {CasesTableComponent} from "./public/cases/pages/table/cases.component";
+import { ViewRequestComponent } from './views/request/view-request/view-request.component';
+import { WorkActiveComponent } from './views/work-active/work-active.component';
+
 
 @NgModule({
   declarations: [
@@ -66,7 +69,9 @@ import {CasesTableComponent} from "./public/cases/pages/table/cases.component";
     RequestComponent,
     DialogSubscriptionComponent,
     CasesComponent,
-    CasesTableComponent
+    CasesTableComponent,
+    ViewRequestComponent,
+    WorkActiveComponent
 
   ],
   imports: [
