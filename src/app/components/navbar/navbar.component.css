@@ -42,3 +42,23 @@ mat-icon{
   padding: 0 5px;
 }
 
+.footer-bottom {
+  position: fixed;
+  height: 140px;
+}
+
+
+.rt-container {
+  flex: 1;
+  padding: 0px;
+}
+
+.reverse-toolbar {
+  padding: 0px;
+  flex-direction: row-reverse !important;
+}
+
+.toolbar-icon {
+  width: 25px;
+  height: 25px;
+}

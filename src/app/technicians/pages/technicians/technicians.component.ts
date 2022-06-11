@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from "../../../security/services/auth.service";
 
 @Component({
   selector: 'app-technicians',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechniciansComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
+  }
+  public getFirstName(){
+    return this.authService.getValidatedData('firstName')
+  }
+  public getLastName(){
+    return this.authService.getValidatedData('lastName');
+  }
+  public getPhone(){
+    return this.authService.getValidatedData('phone');
+  }
+  public getEmail(){
+    return this.authService.getValidatedData('email');
+  }
+  public getGender(){
+    return this.authService.getValidatedData('gender');
+  }
+  public getArea(){
+    return this.authService.getValidatedData('area');
+  }
+  public getBrand(){
+    return this.authService.getValidatedData('brand');
   }
 
 }

@@ -9,12 +9,13 @@ import {Business} from "../model/business";
   providedIn: 'root'
 })
 export class AuthService {
-  basePath: string = 'http://localhost:3000/api/v1/auth';
+  basePath: string = 'http://localhost:8080/api/v1';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application-json',
     })
   }
+  information: Technician | Business | undefined;
   constructor(private http: HttpClient) { }
   //api error handling
   public handleError(error: HttpErrorResponse) {
@@ -32,16 +33,20 @@ export class AuthService {
   }
   //sign up
   public signUp(user: Technician): Observable<any>{
-    return this.http.post<User>(`${this.basePath}/sign-up`, user)
+    return this.http.post<Technician>(`${this.basePath}/technicians`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   public signUpB(user: Business): Observable<any>{
-    return this.http.post<User>(`${this.basePath}/sign-up`, user)
+    return this.http.post<Business>(`${this.basePath}/business`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   //sign in
-  public signIn(user: User): Observable<any>{
-    return this.http.post<User>(`${this.basePath}/sign-in`, user)
+  public signIn(user: Technician): Observable<any>{
+    return this.http.post<Technician>(`${this.basePath}/logIn/technician`, user)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+  public signInB(user: Business): Observable<any>{
+    return this.http.post<Business>(`${this.basePath}/logIn/business`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   // get, set Token
@@ -59,24 +64,29 @@ export class AuthService {
     return localStorage.getItem('currentUser');
   }
   //is signed
-  get isSignedIn(): boolean{
-    return this.getToken() !== null;
+  public isSignedIn(): boolean{
+    return this.getInformation()?.password !== undefined;
   }
   // sign-out
   public signOut(){
     localStorage.removeItem('accessToken');
     localStorage.removeItem('currentUser');
+    this.setInformation(undefined);
   }
   public getValidatedData(_value: string){
     let currentUserString = this.getCurrentUser();
     if (currentUserString) {
-      console.log(currentUserString);
       let currentUser = JSON.parse(currentUserString);
-      console.log(currentUser[_value]);
       return currentUser[_value];
     } else {
       return null;
     }
+  }
+  setInformation(data: Business | Technician | undefined): void{
+    this.information = data;
+  }
+  getInformation(){
+    return this.information;
   }
 
 

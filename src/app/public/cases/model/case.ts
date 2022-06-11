@@ -1,6 +1,8 @@
 export interface Case {
+  id: Number;
   date: Date;
-  technician: string;
+  technicianId: string;
   description: string;
+  details: string;
   review: string;
 }

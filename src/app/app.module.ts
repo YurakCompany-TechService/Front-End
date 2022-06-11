@@ -31,6 +31,17 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MatDialogModule } from "@angular/material/dialog";
+import { HomeBusinessComponent } from './views/home/home/home-business/home-business.component';
+import { HomeTechnicianComponent } from './views/home/home/home-technician/home-technician.component';
+import { CompaniesComponent } from "./companies/pages/companies/companies.component";
+import {NotificationComponent} from "./components/notification/notification.component";
+import {SubscriptionComponent} from "./views/subscription/subscription.component";
+import {RequestComponent} from "./views/request/pages/request/request.component";
+import {DialogSubscriptionComponent} from "./components/dialogSubscription/dialogSubscription.component";
+import {CasesTableComponent} from "./public/cases/pages/table/cases.component";
 
 @NgModule({
   declarations: [
@@ -45,7 +56,17 @@ import {MatSortModule} from "@angular/material/sort";
     HelpComponent,
     CasesComponent,
     TechniciansComponent,
-    ServiceshistoryComponent
+    ServiceshistoryComponent,
+    DialogComponent,
+    HomeBusinessComponent,
+    HomeTechnicianComponent,
+    CompaniesComponent,
+    NotificationComponent,
+    SubscriptionComponent,
+    RequestComponent,
+    DialogSubscriptionComponent,
+    CasesComponent,
+    CasesTableComponent
 
   ],
   imports: [
@@ -76,6 +97,8 @@ import {MatSortModule} from "@angular/material/sort";
     MatCardModule,
     MatGridListModule,
     FormsModule,
+    IvyCarouselModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

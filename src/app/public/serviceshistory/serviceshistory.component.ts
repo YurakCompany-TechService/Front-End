@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+// @ts-ignore
 import {Company} from "../../companies/model/company";
 import {MatTableDataSource} from "@angular/material/table";
 import {CompaniesService} from "../../companies/services/companies.service";

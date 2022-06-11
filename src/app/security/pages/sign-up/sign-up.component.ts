@@ -22,7 +22,8 @@ export class SignUpComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       phone: [0, [Validators.required, Validators.maxLength(9)]],
       brand: ['', [Validators.required]],
-      area: ['', [Validators.required]]
+      area: ['', [Validators.required]],
+      type: ['']
     });
   }
   get email() { return this.signUpForm.controls['email'];}
@@ -33,8 +34,10 @@ export class SignUpComponent implements OnInit {
   get brand() {return this.signUpForm.controls['brand'];}
   get area() {return this.signUpForm.controls['area'];}
   get gender() {return this.signUpForm.controls['gender'];}
+  get type() {return this.signUpForm.controls['type'];}
 
   signUp(){
+    this.signUpForm.value.type = 'technician'
     this.authService.signUp(this.signUpForm.value).subscribe((response: any)=>{
       console.log(JSON.stringify(response.user));
       this.authService.setCurrentUser(JSON.stringify(response.user));
