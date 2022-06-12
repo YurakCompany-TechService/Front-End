@@ -26,8 +26,6 @@ export class NavbarComponent implements OnInit {
 
   public getCurrentTargetSegment(){
     console.log(this.authService.getInformation()?.type)
-    if (this.authService.getInformation() === null)
-      return true;
     return this.authService.getInformation()?.type;
     //return this.authService.getValidatedData('type')
   }

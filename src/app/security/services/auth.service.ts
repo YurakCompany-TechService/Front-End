@@ -15,7 +15,7 @@ export class AuthService {
       'Content-type': 'application-json',
     })
   }
-  information: Technician | Business | undefined;
+  information: User | undefined;
   constructor(private http: HttpClient) { }
   //api error handling
   public handleError(error: HttpErrorResponse) {
@@ -41,12 +41,12 @@ export class AuthService {
       .pipe(retry(3), catchError(this.handleError));
   }
   //sign in
-  public signIn(user: Technician): Observable<any>{
-    return this.http.post<Technician>(`${this.basePath}/logIn/technician`, user)
+  public signIn(user: User): Observable<any>{
+    return this.http.post<User>(`${this.basePath}/logIn/technician`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
-  public signInB(user: Business): Observable<any>{
-    return this.http.post<Business>(`${this.basePath}/logIn/business`, user)
+  public signInB(user: User): Observable<any>{
+    return this.http.post<User>(`${this.basePath}/logIn/business`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   // get, set Token
@@ -82,7 +82,7 @@ export class AuthService {
       return null;
     }
   }
-  setInformation(data: Business | Technician | undefined): void{
+  setInformation(data: User | undefined): void{
     this.information = data;
   }
   getInformation(){

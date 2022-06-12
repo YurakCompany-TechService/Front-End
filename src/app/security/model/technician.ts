@@ -8,5 +8,6 @@ export interface Technician {
   area: string,
   phone: number,
   gender: string,
-  type: string
+  type: string,
+
 }

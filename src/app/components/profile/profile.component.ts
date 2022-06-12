@@ -15,25 +15,34 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
   public getFirstName(){
-    this.authService.getValidatedData('firstName');
+    // this.authService.getValidatedData('firstName');
+    console.log(this.authService.getInformation()?.firstName);
+    return this.authService.getInformation()?.firstName;
   }
   public getLastName(){
-    this.authService.getValidatedData('lastName');
+    // this.authService.getValidatedData('lastName');
+    return this.authService.getInformation()?.lastName;
   }
   public getEmail(){
-    this.authService.getValidatedData('email');
+    // this.authService.getValidatedData('email');
+    return this.authService.getInformation()?.email;
   }
   public getBrand(){
-    this.authService.getValidatedData('brand');
+    // this.authService.getValidatedData('brand');
+    return this.authService.getInformation()?.brand;
   }
   public getArea(){
-    this.authService.getValidatedData('area');
+    // this.authService.getValidatedData('area');
+    return this.authService.getInformation()?.area;
   }
   public getGender(){
-    this.authService.getValidatedData('gender');
+    // this.authService.getValidatedData('gender');
+    return this.authService.getInformation()?.gender;
   }
   public getPhone(){
-    this.authService.getValidatedData('phone');
+    // this.authService.getValidatedData('phone');
+    console.log(this.authService.getInformation()?.phone)
+    return this.authService.getInformation()?.phone;
   }
   public showCompleteName(){
     return `${this.getFirstName()}  ${this.getLastName()}`;
