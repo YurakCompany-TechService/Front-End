@@ -37,7 +37,7 @@ export class AuthService {
       .pipe(retry(3), catchError(this.handleError));
   }
   public signUpB(user: Business): Observable<any>{
-    return this.http.post<Business>(`${this.basePath}/business`, user)
+    return this.http.post<Business>(`${this.basePath}/businesses`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   //sign in
@@ -46,7 +46,7 @@ export class AuthService {
       .pipe(retry(3), catchError(this.handleError));
   }
   public signInB(user: User): Observable<any>{
-    return this.http.post<User>(`${this.basePath}/logIn/business`, user)
+    return this.http.post<User>(`${this.basePath}/logIn/businesses`, user)
       .pipe(retry(3), catchError(this.handleError));
   }
   // get, set Token
