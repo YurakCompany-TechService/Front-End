@@ -4,16 +4,54 @@
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 15px 40px;
-  margin-bottom: 15px;
-  gap: 15px;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100px;
+  padding: 20px;
 }
 
-.button-1{
-  align-items: center;
-  justify-items: center;
-  width: 80px;
+.text-container {
+  width: 600px;
 }
+
+.title-request {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.id {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ 
+}
+
+.button {
+  background-color: #593EA5;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 15px;
+  justify-items: center;
+}
+

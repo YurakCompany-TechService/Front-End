@@ -48,23 +48,25 @@
     font-size: 20px;
   }
   
-  .desc-content {
-    background: rgba(67, 64, 236, 0.25);
-    padding: 25px 25px 50px 25px;
-    width: 80%;
-    border-radius: 3px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-top: 20px;
-    left: auto;
-  }
-  .text-area{
-    height: 150px;
-  }
-  .button-1{
-    align-items: center;
-    justify-items: center;
-    width: 80px;
-  }
+.desc-content {
+  background: rgba(67, 64, 236, 0.25);
+  padding: 25px 25px 50px 25px;
+  width: 80%;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 20px;
+  left: auto;
+}
+
+.text-area{
+  height: 150px;
+}
+
+.button-1{
+  align-items: center;
+  justify-items: center;
+  width: 80px;
+}

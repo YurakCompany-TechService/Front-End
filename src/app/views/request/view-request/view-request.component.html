@@ -1,11 +1,20 @@
-<mat-card class="request-box">
+<mat-card class = "request-box">
      
-    <p class="text">Model</p>
+    <div class = "id">1</div>
+    <div class = "text-container">
+      <div class="title-request">Model</div>
+      <div class="title-request">Brand</div>
+      <div class="title-request">Address</div>
+      <div>MACBOOK</div>
+      <div>APPLE</div>
+      <div>CALIFORNIA</div>
+    </div>
+
     
-    <p class="text">Brand</p>
 
-    <p class="text">Address</p>
+    <div class = "button-container">
+      <button class = "button" [routerLink]="'/work-active'" >Accept</button>
+      <button class = "button">Reject</button>
+    </div>
      
-    <button class="button-1" mat-button [routerLink]="'/work-active'" mat-raised-button color="primary">Accept</button>
-
 </mat-card>
