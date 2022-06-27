@@ -28,14 +28,28 @@ export class SignInComponent implements OnInit {
 
   signIn(){
     this.authService.signIn(this.signInForm.value).subscribe((response: any)=>{
-      this.authService.setToken(JSON.stringify(response.accessToken));
-      this.authService.setCurrentUser(JSON.stringify(response.user));
+      // this.authService.setToken(JSON.stringify(response.accessToken));
+      // this.authService.setCurrentUser(JSON.stringify(response.user));
+      if (response === null) return;
       this.signInForm.reset();
-      console.log(`accessToken: ${this.authService.getToken()}`);
+      // console.log(`accessToken: ${this.authService.getToken()}`);
       // back to home
-      let userTarget: string = this.authService.getValidatedData('type');
+      this.router.navigate(['home']).then();
+      //let userTarget: string = this.authService.getValidatedData('type');
+      let userTarget: string = response.type;
       this.router.navigate([`home-${userTarget}`]).then();
+      this.authService.setInformation(response);
+      console.log("test", this.authService.getInformation());
     })
+    this.authService.signInB(this.signInForm.value).subscribe((response: any)=>{
+      if (response === null) return;
+      this.signInForm.reset();
+      let userTarget: string = response.type;
+      this.router.navigate([`home-${userTarget}`]).then();
+      this.authService.setInformation(response);
+      console.log("test", this.authService.getInformation());
+    })
+    return;
   }
 
   cancelSignIn() {
