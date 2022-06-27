@@ -7,5 +7,7 @@ export interface Technician {
   brand: string,
   area: string,
   phone: number,
-  gender: string
+  gender: string,
+  type: string,
+
 }

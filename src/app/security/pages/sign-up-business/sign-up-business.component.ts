@@ -39,7 +39,7 @@ export class SignUpBusinessComponent implements OnInit {
   signUp(){
     this.signUpFormB.value.type = 'business';
       this.authService.signUpB(this.signUpFormB.value).subscribe((response: any)=>{
-        this.authService.setCurrentUser(JSON.stringify(response.user));
+        this.authService.setCurrentUser(JSON.stringify(response));
         this.signUpFormB.reset();
         this.router.navigate(['sign-in']).then();
     })

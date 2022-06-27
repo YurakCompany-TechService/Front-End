@@ -39,8 +39,8 @@ export class SignUpComponent implements OnInit {
   signUp(){
     this.signUpForm.value.type = 'technician'
     this.authService.signUp(this.signUpForm.value).subscribe((response: any)=>{
-      console.log(JSON.stringify(response.user));
-      this.authService.setCurrentUser(JSON.stringify(response.user));
+      console.log(JSON.stringify(response), response.user);
+      this.authService.setCurrentUser(JSON.stringify(response));
       this.signUpForm.reset();
       this.router.navigate(['sign-in']).then();
   })

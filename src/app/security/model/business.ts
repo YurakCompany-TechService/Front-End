@@ -7,5 +7,6 @@ export interface Business {
   password: string,
   creditCard: string,
   creditCardCVV: string,
-  subscription: string
+  subscription: string,
+  type: string
 }
